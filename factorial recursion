@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int fact(int num){
+    if(num==0) return 1;
+    int smll=fact(num-1);
+ int big=num * smll;
+ return big;
+}
+int main(){    
+    int n;
+    cin>>n;                                                          //use recursion find factorial
+    cout<<fact(n);
+
+    return 0;
+}
